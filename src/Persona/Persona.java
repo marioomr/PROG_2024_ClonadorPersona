@@ -98,7 +98,7 @@ public class Persona {
 	 */
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + ", altura=" + altura + "]";
+		return "Persona {" + nombre + "} - <" + edad + "> - (" + peso + ") - -" + altura + "-]";
 	}
 	
 	
