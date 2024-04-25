@@ -18,8 +18,9 @@ public class ClonadorPersonas {
 	public ClonadorPersonas(String nombre) {
 		this.nombre = nombre;
 	}
+
 	/**
-	 * 
+	 * Lista para generar clones
 	 * @return
 	 */
 	public List<Persona> generarClones() {
@@ -28,9 +29,9 @@ public class ClonadorPersonas {
 		
 		for(int i=0; i<10; i++) {
 			try {
-				int edad = (int) (Math.random()*PersonaData.EDAD_MAX);
-				float altura = (float) (Math.random()*PersonaData.ALTURA_MAX);
-				float peso = (float) (Math.random()*PersonaData.PESO_MAX);
+				int edad = (int) (Math.random()*PersonaData.EDAD_MAX+PersonaData.EDAD_MIN);
+				float altura = (float) (Math.random()*PersonaData.ALTURA_MAX+PersonaData.ALTURA_MIN);
+				float peso = (float) (Math.random()*PersonaData.PESO_MAX+PersonaData.PESO_MIN);
 				Persona p1 = new Persona(nombre, edad, peso, altura);
 				personas.add(p1);
 			}
